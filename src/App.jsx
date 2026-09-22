@@ -1,7 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import CenteredLayout from "./layouts/CenteredLayout";
+import HomePage from "./pages/HomePage"
+
 export default function() {
   return (
     <>
-      <h1 className="text-violet-800 font-kode-mono">Hello, World!</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<CenteredLayout />}>
+            <Route index element={<HomePage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
