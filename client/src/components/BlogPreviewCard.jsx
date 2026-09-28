@@ -1,4 +1,5 @@
 import { formatDate } from "../utils/formatDate"
+
 import { post } from "../data/post"
 
 export default function BlogPreviewCard() {
